@@ -2,7 +2,7 @@ version: '3'
 
 services:
   lldap:
-    image: nitnelave/lldap:stable
+    image: nitnelave/lldap:latest
     ports:
       # For LDAP
       - "172.17.0.1:3890:3890"
