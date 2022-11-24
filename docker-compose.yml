@@ -19,4 +19,4 @@ services:
       - LLDAP_JWT_SECRET=${ADMIN_PASSWORD}
       - LLDAP_LDAP_USER_PASS=${ADMIN_PASSWORD}
       - LLDAP_LDAP_BASE_DN=dc=example,dc=com
-      - LLDAP_USER_EMAIL=admin@example.com
+      - LLDAP_LDAP_USER_EMAIL=admin@example.com
