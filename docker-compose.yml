@@ -16,6 +16,7 @@ services:
       - UID=10001
       - GID=10001
       - TZ=UTC
-      - LLDAP_JWT_SECRET=REPLACE_WITH_RANDOM
-      - LLDAP_LDAP_USER_PASS=REPLACE_WITH_PASSWORD
+      - LLDAP_JWT_SECRET=${ADMIN_PASSWORD}
+      - LLDAP_LDAP_USER_PASS=${ADMIN_PASSWORD}
       - LLDAP_LDAP_BASE_DN=dc=example,dc=com
+      - LLDAP_USER_EMAIL=admin@example.com
