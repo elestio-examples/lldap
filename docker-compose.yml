@@ -3,6 +3,7 @@ version: '3'
 services:
   lldap:
     image: nitnelave/lldap:stable
+    restart: always
     ports:
       # For LDAP
       - "172.17.0.1:3890:3890"
@@ -16,6 +17,10 @@ services:
       - UID=1000
       - GID=1000
       # - TZ=####/####
-      - LLDAP_JWT_SECRET=REPLACE_WITH_RANDOM
-      - LLDAP_LDAP_USER_PASS=REPLACE_WITH_PASSWORD
+      - LLDAP_JWT_SECRET=${ADMIN_PASSWORD}
+      - LLDAP_LDAP_USER_PASS=${ADMIN_PASSWORD}
       - LLDAP_LDAP_BASE_DN=dc=example,dc=com
+      - LLDAP_SMTP_OPTIONS_ENABLE_PASSWORD_RESET=true
+      - LLDAP_SMTP_OPTIONS_SERVER=${LLDAP_SMTP_OPTIONS_SERVER}
+      - LLDAP_SMTP_OPTIONS_PORT=${LLDAP_SMTP_OPTIONS_PORT}
+      - LLDAP_SMTP_OPTIONS_USER=${LLDAP_SMTP_OPTIONS_USER}
