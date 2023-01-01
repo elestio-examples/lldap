@@ -17,7 +17,7 @@ services:
       - UID=1000
       - GID=1000
       # - TZ=####/####
-      - LLDAP_JWT_SECRET=${ADMIN_PASSWORD}
+      - LLDAP_JWT_SECRET=REPLACE_WITH_RANDOM
       - LLDAP_LDAP_USER_PASS=${ADMIN_PASSWORD}
       - LLDAP_LDAP_BASE_DN=dc=example,dc=com
       - LLDAP_SMTP_OPTIONS_ENABLE_PASSWORD_RESET=true
