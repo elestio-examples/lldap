@@ -2,7 +2,7 @@ version: '3'
 
 services:
   lldap:
-    image: nitnelave/lldap:latest
+    image: nitnelave/lldap:stable
     ports:
       # For LDAP
       - "172.17.0.1:3890:3890"
@@ -13,10 +13,9 @@ services:
       # Alternatively, you can mount a local folder
       # - "./lldap_data:/data"
     environment:
-      - UID=10001
-      - GID=10001
-      - TZ=UTC
-      - LLDAP_JWT_SECRET=${ADMIN_PASSWORD}
-      - LLDAP_LDAP_USER_PASS=${ADMIN_PASSWORD}
-      - LLDAP_LDAP_USER_EMAIL=admin@example.com
+      - UID=1000
+      - GID=1000
+      # - TZ=####/####
+      - LLDAP_JWT_SECRET=REPLACE_WITH_RANDOM
+      - LLDAP_LDAP_USER_PASS=REPLACE_WITH_PASSWORD
       - LLDAP_LDAP_BASE_DN=dc=example,dc=com
