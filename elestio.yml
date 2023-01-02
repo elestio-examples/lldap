@@ -15,15 +15,15 @@ environments:
   - key: LLDAP_SMTP_OPTIONS_ENABLE_PASSWORD_RESET
     value: true
   - key: LLDAP_SMTP_OPTIONS_SERVER
-    value: ""
+    value: "smtp.gmail.com"
   - key: "LLDAP_SMTP_OPTIONS_USER"
-    value: ""
+    value: "random@random.com"
   - key: "LLDAP_SMTP_OPTIONS_PASSWORD"
-    value: ""
+    value: "random"
   - key: "LLDAP_SMTP_OPTIONS_PORT"
-    value: ""
+    value: "587"
   - key: "LLDAP_SMTP_OPTIONS_SMTP_ENCRYPTION"
-    value: ""
+    value: "TLS"
   - key: "LLDAP_HTTP_URL"
     value: "https://[CI_CD_DOMAIN]"
 
