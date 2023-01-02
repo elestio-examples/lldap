@@ -13,7 +13,7 @@ environments:
   - key: "ADMIN_PASSWORD"
     value: "random_password"
   - key: LLDAP_SMTP_OPTIONS_ENABLE_PASSWORD_RESET
-    value: false
+    value: true
   - key: LLDAP_SMTP_OPTIONS_SERVER
     value: "smtp.gmail.com"
   - key: "LLDAP_SMTP_OPTIONS_USER"
@@ -24,6 +24,8 @@ environments:
     value: "587"
   - key: "LLDAP_SMTP_OPTIONS_SMTP_ENCRYPTION"
     value: "TLS"
+  - key: "LLDAP_HTTP_URL"
+    value: "https://[CI_CD_DOMAIN]"
 
 config:
   runTime: "dockerCompose"
