@@ -25,7 +25,7 @@ environments:
   - key: "LLDAP_SMTP_OPTIONS_SMTP_ENCRYPTION"
     value: ""
   - key: "LLDAP_HTTP_URL"
-    value: ""
+    value: "https://[CI_CD_DOMAIN]"
 
 config:
   runTime: "dockerCompose"
