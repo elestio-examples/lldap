@@ -17,9 +17,9 @@ environments:
   - key: LLDAP_SMTP_OPTIONS_SERVER
     value: "smtp.gmail.com"
   - key: "LLDAP_SMTP_OPTIONS_USER"
-    value: ""
+    value: "jj4781122@gmail.com"
   - key: "LLDAP_SMTP_OPTIONS_PASSWORD"
-    value: ""
+    value: "ABcd1234##"
   - key: "LLDAP_SMTP_OPTIONS_PORT"
     value: "587"
   - key: "LLDAP_SMTP_OPTIONS_SMTP_ENCRYPTION"
