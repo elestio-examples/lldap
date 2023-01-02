@@ -12,12 +12,20 @@ environments:
     value: "[EMAIL]"
   - key: "ADMIN_PASSWORD"
     value: "random_password"
+  - key: LLDAP_SMTP_OPTIONS_ENABLE_PASSWORD_RESET
+    value: false
+  - key: LLDAP_SMTP_OPTIONS_SERVER
+    value: ""
   - key: "LLDAP_SMTP_OPTIONS_USER"
-    value: "[DOMAIN]@vm.elestio.app"
+    value: ""
+  - key: "LLDAP_SMTP_OPTIONS_PASSWORD"
+    value: ""
   - key: "LLDAP_SMTP_OPTIONS_SERVER"
-    value: "172.17.0.1"
+    value: ""
   - key: "LLDAP_SMTP_OPTIONS_PORT"
-    value: "25"
+    value: """
+  - key: "LLDAP_SMTP_OPTIONS_SMTP_ENCRYPTION"
+    value: ""
 
 config:
   runTime: "dockerCompose"
