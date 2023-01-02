@@ -23,7 +23,7 @@ environments:
   - key: "LLDAP_SMTP_OPTIONS_SERVER"
     value: ""
   - key: "LLDAP_SMTP_OPTIONS_PORT"
-    value: """
+    value: ""
   - key: "LLDAP_SMTP_OPTIONS_SMTP_ENCRYPTION"
     value: ""
 
