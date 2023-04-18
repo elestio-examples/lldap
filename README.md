@@ -10,7 +10,7 @@ Deploy Light LDAP server with CI/CD on Elestio
 
 # Once deployed ...
 
-You can can open Light LDAP UI here:
+You can open Light LDAP UI here:
 
     URL: https://[CI_CD_DOMAIN]
     Login: root
