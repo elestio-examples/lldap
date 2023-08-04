@@ -2,7 +2,7 @@ version: '3'
 
 services:
   lldap:
-    image: nitnelave/lldap:stable
+    image: nitnelave/lldap:${SOFTWARE_VERSION_TAG}
     restart: always
     ports:
       # For LDAP
