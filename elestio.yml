@@ -26,7 +26,8 @@ environments:
     value: "TLS"
   - key: "LLDAP_HTTP_URL"
     value: "https://[CI_CD_DOMAIN]"
-
+  - key: "SOFTWARE_VERSION_TAG"
+    value: "stable"
 config:
   runTime: "dockerCompose"
   version: ""
